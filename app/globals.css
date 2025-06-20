@@ -870,3 +870,111 @@ section h2 {
     min-width: 200px;
   }
 }
+
+
+
+
+.skills-graph {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.skill-node {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  color: rgba(27, 88, 187);
+}
+
+.skill-node:hover {
+  /* transform: scale(1.05); */
+  border-color: var(--accent);
+  box-shadow: 0 0 20px rgba(246, 196, 59, 0.525);
+}
+
+.skill-center {
+  background-color: orange;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.orbit-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  animation: orbit 30s linear infinite;
+  transform-origin: center;
+  z-index: 0;
+}
+
+
+
+.orbiting {
+  animation: orbit 20s linear infinite;
+  transform-origin: 50% 50%;
+}
+
+
+/*  */
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.orbiting-skill {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #1e40af;
+  top: 50%;
+  left: 50%;
+  transform-origin: center -150px; /* distance from center */
+  animation: orbit 20s linear infinite;
+}
+
+.skill-label {
+  transform: rotate(360deg); /* Static counter-rotation */
+  animation: counter-rotate 20s linear infinite;
+}
+
+@keyframes counter-rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}

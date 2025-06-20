@@ -27,7 +27,7 @@ export default function Header() {
           <span>Portfolio</span>
         </div>
         <nav className="nav">
-          <button onClick={() => scrollToSection("about")}>About</button>
+          <button onClick={() => scrollToSection("skills")}>Skills</button>
           <button onClick={() => scrollToSection("experience")}>Experience</button>
           <button onClick={() => scrollToSection("projects")}>Projects</button>
           <button onClick={() => scrollToSection("contact")}>Contact</button>
