@@ -50,9 +50,9 @@ function ParticleMesh() {
         />
       </bufferGeometry>
       <pointsMaterial
-        size={0.05}
+        size={0.02}
         transparent
-        opacity={0.8}
+        opacity={1}
         vertexColors
         sizeAttenuation
       />
