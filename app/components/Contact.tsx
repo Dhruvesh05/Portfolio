@@ -29,7 +29,15 @@ export default function Contact() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <h2>Get In Touch</h2>
+        <div className="skills-title-wrapper">
+          <h2 className="animated-heading">
+            {"Connect".split("").map((letter, index) => (
+              <span key={index} style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
+                {letter}
+              </span>
+            ))}
+          </h2>
+        </div>
         <div className="contact-content">
           <div className="contact-info">
             <p>

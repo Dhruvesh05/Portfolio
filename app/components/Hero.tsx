@@ -27,13 +27,20 @@ export default function Hero() {
               className="profile-img"
             />
           </div>
-          <h1>
+          <h1 className="heading">
             <span className="greeting">Hello, I'm</span>
-            <span className="name">Dhruvesh Patil</span>
+            <span className="name">
+              {"Dhruvesh Patil".split("").map((char, index) => (
+                <span key={index} className="char" style={{ animationDelay: `${index * 0.05}s` }}>
+                  {char === " " ? "\u00A0" : char}
+                </span>
+              ))}
+            </span>
           </h1>
           <p className="title">Full Stack Developer & Designer</p>
           <p className="description">
-            B-Tech Computer Engineering undergraduate, having interests in web-development, problem-solving and AI / AI Automations. 
+            B-Tech Computer Engineering undergraduate, having interests in web-development,
+            problem-solving and AI / AI Automations.
           </p>
           <div className="hero-buttons">
             <button className="btn-primary" onClick={() => scrollToSection("projects")}>

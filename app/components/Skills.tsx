@@ -208,8 +208,8 @@ export default function Skills() {
         const gradient = ctx.createLinearGradient(skill.x, skill.y, connectedSkill.x, connectedSkill.y)
         const alpha = isHighlighted ? "80" : "40"
         gradient.addColorStop(0, categoryColors[skill.category] + alpha)
-        gradient.addColorStop(0.5, "#ffffff" + (isHighlighted ? "60" : "20"))
-        gradient.addColorStop(1, categoryColors[connectedSkill.category] + alpha)
+        gradient.addColorStop(0, "#ffffff" + (isHighlighted ? "6" : "20"))
+        gradient.addColorStop(0, categoryColors[connectedSkill.category] + alpha)
 
         ctx.strokeStyle = gradient
         ctx.lineWidth = isHighlighted ? 3 : 1.5
@@ -224,7 +224,7 @@ export default function Skills() {
 
           ctx.beginPath()
           ctx.arc(particleX, particleY, 3, 0, Math.PI * 2)
-          ctx.fillStyle = "#ffffff80"
+          ctx.fillStyle = "transparent"
           ctx.fill()
         }
       })
@@ -239,13 +239,13 @@ export default function Skills() {
       const time = Date.now() * 0.001
 
       // Draw main skill node (larger circle)
-      const mainRadius = isHovered ? 25 : 20
+      const mainRadius = isHovered ? 2 : 2
       const pulseRadius = mainRadius + Math.sin(time * 2 + skill.x * 0.01) * 3
 
       // Outer glow
       const glowGradient = ctx.createRadialGradient(skill.x, skill.y, 0, skill.x, skill.y, pulseRadius + 10)
       glowGradient.addColorStop(0, categoryColors[skill.category] + "40")
-      glowGradient.addColorStop(1, categoryColors[skill.category] + "00")
+      glowGradient.addColorStop(0, categoryColors[skill.category] + "00")
 
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, pulseRadius + 10, 0, Math.PI * 2)
@@ -255,25 +255,25 @@ export default function Skills() {
       // Main node background
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, mainRadius, 0, Math.PI * 2)
-      ctx.fillStyle = "rgba(26, 26, 26, 0.9)"
+      ctx.fillStyle = "rgba(255, 255, 255, 0)"
       ctx.fill()
 
       // Main node border
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, mainRadius, 0, Math.PI * 2)
       ctx.strokeStyle = categoryColors[skill.category]
-      ctx.lineWidth = isHovered ? 3 : 2
+      ctx.lineWidth = isHovered ? 2 : 2
       ctx.stroke()
 
       // Draw skill label with circular background
-      const labelY = skill.y - 45
+      const labelY = skill.y - 35
       const labelRadius = 35
 
       // Label background circle
       const labelGradient = ctx.createRadialGradient(skill.x, labelY, 0, skill.x, labelY, labelRadius)
       labelGradient.addColorStop(0, categoryColors[skill.category] + "20")
-      labelGradient.addColorStop(0.7, categoryColors[skill.category] + "10")
-      labelGradient.addColorStop(1, categoryColors[skill.category] + "05")
+      labelGradient.addColorStop(0, categoryColors[skill.category] + "10")
+      labelGradient.addColorStop(0, categoryColors[skill.category] + "05")
 
       ctx.beginPath()
       ctx.arc(skill.x, labelY, labelRadius, 0, Math.PI * 2)
@@ -283,18 +283,18 @@ export default function Skills() {
       // Label border
       ctx.beginPath()
       ctx.arc(skill.x, labelY, labelRadius, 0, Math.PI * 2)
-      ctx.strokeStyle = categoryColors[skill.category] + "60"
+      ctx.strokeStyle = categoryColors[skill.category] + "20"
       ctx.lineWidth = 1
       ctx.stroke()
 
       // Label text
-      ctx.font = "11px Inter, poppins"
+      ctx.font = "10px Inter, sans-serif"
       ctx.textAlign = "center"
       ctx.textBaseline = "middle"
       ctx.fillStyle = categoryColors[skill.category]
 
       // Add text shadow for better readability
-      ctx.shadowColor = "transparent"
+      ctx.shadowColor = "none"
       ctx.shadowBlur = 0
       ctx.shadowOffsetX = 0
       ctx.shadowOffsetY = 0
@@ -302,7 +302,7 @@ export default function Skills() {
       ctx.fillText(skill.name, skill.x, labelY)
 
       // Reset shadow
-      ctx.shadowColor = "transparent"
+      // ctx.shadowColor = "transparent"
       ctx.shadowBlur = 0
       ctx.shadowOffsetX = 0
       ctx.shadowOffsetY = 0
@@ -359,7 +359,7 @@ export default function Skills() {
           const alpha = 0.05
 
           ctx.beginPath()
-          ctx.arc(x, y, 2, 0, Math.PI * 2)
+          ctx.arc(x, y, 0, 0, Math.PI * 2)
           ctx.fillStyle = `rgba(16, 185, 129, ${alpha})`
           ctx.fill()
         }
@@ -418,7 +418,16 @@ export default function Skills() {
   return (
     <section id="skills" className="skills-constellation">
       <div className="container">
-        <h2>Skills</h2>
+        <div className="skills-title-wrapper">
+          <h2 className="animated-heading">
+            {"Skills".split("").map((letter, index) => (
+              <span key={index} style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
+                {letter}
+              </span>
+            ))}
+          </h2>
+        </div>
+
 
         {/* <div className="formation-indicator">
           <span className="formation-name">{formation.toUpperCase()} Formation</span>

@@ -26,7 +26,15 @@ export default function Experience() {
   return (
     <section id="experience" className="experience">
       <div className="container">
-        <h2>Experience</h2>
+        <div className="skills-title-wrapper">
+          <h2 className="animated-heading">
+            {"Experience".split("").map((letter, index) => (
+              <span key={index} style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
+                {letter}
+              </span>
+            ))}
+          </h2>
+        </div>
         <div className="timeline">
           {experiences.map((exp, index) => (
             <div key={index} className="timeline-item">

@@ -29,7 +29,15 @@ export default function Projects() {
   return (
     <section id="projects" className="projects">
       <div className="container">
-        <h2>Featured Projects</h2>
+        <div className="skills-title-wrapper">
+          <h2 className="animated-heading">
+            {"Projects".split("").map((letter, index) => (
+              <span key={index} style={{ "--delay": `${index * 0.1}s` } as React.CSSProperties}>
+                {letter}
+              </span>
+            ))}
+          </h2>
+        </div>
         <div className="projects-grid">
           {projects.map((project, index) => (
             <div key={index} className="project-card">
