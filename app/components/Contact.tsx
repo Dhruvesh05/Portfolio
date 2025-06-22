@@ -45,13 +45,13 @@ export default function Contact() {
               want to say hello, feel free to reach out!
             </p>
             <div className="contact-links">
-              <a href="mailto:your.email@example.com" className="contact-link">
-                <span>your.email@example.com</span>
+              <a href="mailto:dhruveshpatil7777@gmail.com" className="contact-link">
+                <span>dhruveshpatil7777@gmail.com</span>
               </a>
-              <a href="https://linkedin.com/in/yourprofile" className="contact-link">
+              <a href="https://www.linkedin.com/in/dhruvesh-patil-a31917280/" className="contact-link">
                 <span>LinkedIn</span>
               </a>
-              <a href="https://github.com/yourusername" className="contact-link">
+              <a href="https://github.com/Dhruvesh05" className="contact-link">
                 <span>GitHub</span>
               </a>
             </div>

@@ -3,7 +3,7 @@ export default function Projects() {
     {
       title: "C3ube : E-Commerce Platform",
       description:
-        "A full-stack E-commerce solution built  with Django framework for stakeholders who delas with selling of gas cylinders for industrial, medical and other purposes. Features include user authentication, payment processing, and admin dashboard.",
+        "A full-stack E-commerce solution built  with Django framework for stakeholders who delas with selling of gas cylinders for industrial, medical and other purposes. It has features which includes user authentication, payment processing, and admin dashboard.",
       tech: ["Django", "JavaScript", "SQL", "HTML-CSS"],
       github: "#",
       demo: "#",

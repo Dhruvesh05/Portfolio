@@ -1,18 +1,18 @@
 export default function Experience() {
   const experiences = [
     {
-      title: "Senior Full Stack Developer",
-      company: "Tech Company",
-      period: "2022 - Present",
+      title: "Core Committee",
+      company: "MLSC KKWIEER",
+      period: "2024 - Present",
       description:
-        "Led development of multiple web applications using React, Node.js, and cloud technologies. Mentored junior developers and improved team productivity by 40%.",
+        "Core Committee member in the social media team at MLSC KKWIEER .",
     },
     {
-      title: "Full Stack Developer",
-      company: "Startup Inc",
-      period: "2020 - 2022",
+      title: "Creative Team",
+      company: "FOSS Club KKWIEER",
+      period: "2024 - Present",
       description:
-        "Developed and maintained scalable web applications. Collaborated with design team to implement pixel-perfect UI components and optimize user experience.",
+        "Core Committee Member in the creative team at FOSS Club KKWIEER .",
     },
     {
       title: "Frontend Developer",
