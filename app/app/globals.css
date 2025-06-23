@@ -46,7 +46,6 @@
 
 html {
   scroll-behavior: smooth;
-  width: 100%; 
 }
 
 body {
@@ -58,11 +57,9 @@ body {
 }
 
 .container {
-  width: 100%;
-  max-width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  height: 100%;
 }
 
 /* Header Styles */
@@ -76,7 +73,6 @@ body {
   backdrop-filter: blur(15px);
   border-bottom: 1px solid transparent;
   transition: all 0.3s ease;
-  width: 100%;
 }
 
 .header.scrolled {
@@ -92,7 +88,7 @@ body {
 }
 
 .logo span {
-  font-family: "Quicksand" , sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
@@ -137,40 +133,6 @@ body {
   width: 100%;
 }
 
-.hamburger{
-  display: none;
-  font-size: 25px;
-  cursor: pointer;
-  color: var(--text-primary);
-  transition: all 0.3s ease;
-}
-
-@media (max-width: 768px) {
-  .nav {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: var(--bg-secondary);
-    display: none;
-    padding: 1rem 2rem;
-  }
-
-  .nav.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-    background-color: transparent;
-  }
-
-  .hamburger:hover{
-  color: var(--text-primary);
-  }
-}
-
 /* Hero Styles */
 .hero {
   position: relative;
@@ -185,7 +147,6 @@ body {
 
 .hero .container {
   position: relative;
-  width: 700px;
   z-index: 2;
 }
 
@@ -405,9 +366,9 @@ section h2 {
 
 .constellation-container {
   position: relative;
-  width: 100%;
-  height: 700px;
-  margin: 0 0;
+  width: 1200px;
+  height: 800px;
+  margin: 2rem 0;
   opacity: 1;
   transform: translateY(30px);
   transition: all 1s ease;

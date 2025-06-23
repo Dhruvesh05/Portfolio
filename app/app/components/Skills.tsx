@@ -48,13 +48,6 @@ export default function Skills() {
       category: "backend",
       connections: ["Node.js", "JavaScript", "MongoDB"],
     },
-
-    {
-      name: "MongoDB",
-      category: "database",
-      connections: ["Node.js", "Express.js"],
-    },
-
     {
       name: "Python",
       category: "language",
@@ -70,7 +63,11 @@ export default function Skills() {
       category: "language",
       connections: ["Python", "Java"],
     },
-    
+    {
+      name: "MongoDB",
+      category: "database",
+      connections: ["Node.js", "Express.js"],
+    },
   ]
 
   const categoryColors = {
@@ -211,7 +208,7 @@ export default function Skills() {
         const gradient = ctx.createLinearGradient(skill.x, skill.y, connectedSkill.x, connectedSkill.y)
         const alpha = isHighlighted ? "80" : "40"
         gradient.addColorStop(0, categoryColors[skill.category] + alpha)
-        gradient.addColorStop(0, "#ffffff" + (isHighlighted ? "6" : "12"))
+        gradient.addColorStop(0, "#ffffff" + (isHighlighted ? "6" : "20"))
         gradient.addColorStop(0, categoryColors[connectedSkill.category] + alpha)
 
         ctx.strokeStyle = gradient
@@ -227,7 +224,7 @@ export default function Skills() {
 
           ctx.beginPath()
           ctx.arc(particleX, particleY, 3, 0, Math.PI * 2)
-          ctx.fillStyle = "white"
+          ctx.fillStyle = "transparent"
           ctx.fill()
         }
       })
@@ -248,7 +245,7 @@ export default function Skills() {
       // Outer glow
       const glowGradient = ctx.createRadialGradient(skill.x, skill.y, 0, skill.x, skill.y, pulseRadius + 10)
       glowGradient.addColorStop(0, categoryColors[skill.category] + "40")
-      glowGradient.addColorStop(0.2, categoryColors[skill.category] + "00")
+      glowGradient.addColorStop(0, categoryColors[skill.category] + "00")
 
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, pulseRadius + 10, 0, Math.PI * 2)
@@ -265,12 +262,12 @@ export default function Skills() {
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, mainRadius, 0, Math.PI * 2)
       ctx.strokeStyle = categoryColors[skill.category]
-      ctx.lineWidth = isHovered ? 2 : 1
+      ctx.lineWidth = isHovered ? 2 : 2
       ctx.stroke()
 
       // Draw skill label with circular background
-      const labelY = skill.y - 30
-      const labelRadius = 30
+      const labelY = skill.y - 35
+      const labelRadius = 35
 
       // Label background circle
       const labelGradient = ctx.createRadialGradient(skill.x, labelY, 0, skill.x, labelY, labelRadius)
@@ -286,21 +283,21 @@ export default function Skills() {
       // Label border
       ctx.beginPath()
       ctx.arc(skill.x, labelY, labelRadius, 0, Math.PI * 2)
-      ctx.strokeStyle = categoryColors[skill.category] + "45"
+      ctx.strokeStyle = categoryColors[skill.category] + "20"
       ctx.lineWidth = 1
       ctx.stroke()
 
       // Label text
-      ctx.font = "11px DM Sans, sans-serif"
+      ctx.font = "10px Inter, sans-serif"
       ctx.textAlign = "center"
       ctx.textBaseline = "middle"
       ctx.fillStyle = categoryColors[skill.category]
 
       // Add text shadow for better readability
       ctx.shadowColor = "none"
-      ctx.shadowBlur = 1
-      ctx.shadowOffsetX = 1
-      ctx.shadowOffsetY = 1
+      ctx.shadowBlur = 0
+      ctx.shadowOffsetX = 0
+      ctx.shadowOffsetY = 0
 
       ctx.fillText(skill.name, skill.x, labelY)
 
@@ -363,7 +360,7 @@ export default function Skills() {
 
           ctx.beginPath()
           ctx.arc(x, y, 0, 0, Math.PI * 2)
-          ctx.fillStyle = `rgba(0, 0, 0, ${alpha})`
+          ctx.fillStyle = `rgba(16, 185, 129, ${alpha})`
           ctx.fill()
         }
         break
@@ -408,7 +405,7 @@ export default function Skills() {
 
       ctx.beginPath()
       ctx.arc(x, y, 1, 0, Math.PI * 2)
-      ctx.fillStyle = `rgba(0, 0, 0, ${alpha})`
+      ctx.fillStyle = `rgba(245, 158, 11, ${alpha})`
       ctx.fill()
     }
   }
@@ -419,7 +416,7 @@ export default function Skills() {
   }
 
   return (
-    <section id="skills" className="experience">
+    <section id="skills" className="skills-constellation">
       <div className="container">
         <div className="skills-title-wrapper">
           <h2 className="animated-heading">

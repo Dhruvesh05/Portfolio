@@ -27,7 +27,7 @@ export default function Projects() {
   ]
 
   return (
-    <section id="projects" className="experience">
+    <section id="projects" className="projects">
       <div className="container">
         <div className="skills-title-wrapper">
           <h2 className="animated-heading">

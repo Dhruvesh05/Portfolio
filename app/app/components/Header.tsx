@@ -4,7 +4,6 @@ import { useState, useEffect } from "react"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,7 +17,6 @@ export default function Header() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
-      setMenuOpen(false) // close menu after click
     }
   }
 
@@ -28,17 +26,12 @@ export default function Header() {
         <div className="logo">
           <span>Portfolio</span>
         </div>
-
-        <nav className={`nav ${menuOpen ? "active" : ""}`}>
+        <nav className="nav">
           <button onClick={() => scrollToSection("skills")}>Skills</button>
           <button onClick={() => scrollToSection("experience")}>Experience</button>
           <button onClick={() => scrollToSection("projects")}>Projects</button>
           <button onClick={() => scrollToSection("contact")}>Contact</button>
         </nav>
-
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          &#9776;
-        </div>
       </div>
     </header>
   )
