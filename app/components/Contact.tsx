@@ -45,9 +45,9 @@ export default function Contact() {
               want to say hello, feel free to reach out!
             </p>
             <div className="contact-links">
-              <a href="mailto:dhruveshpatil7777@gmail.com" className="contact-link">
+              {/* <a href="mailto:dhruveshpatil7777@gmail.com" className="contact-link">
                 <span>dhruveshpatil7777@gmail.com</span>
-              </a>
+              </a> */}
               <a href="https://www.linkedin.com/in/dhruvesh-patil-a31917280/" className="contact-link">
                 <span>LinkedIn</span>
               </a>
