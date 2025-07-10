@@ -247,8 +247,8 @@ export default function Skills() {
 
       // Outer glow
       const glowGradient = ctx.createRadialGradient(skill.x, skill.y, 0, skill.x, skill.y, pulseRadius + 10)
-      glowGradient.addColorStop(0, categoryColors[skill.category] + "40")
-      glowGradient.addColorStop(0.2, categoryColors[skill.category] + "00")
+      glowGradient.addColorStop(0, categoryColors[skill.category] + "20")
+      glowGradient.addColorStop(1 , categoryColors[skill.category] + "00")
 
       ctx.beginPath()
       ctx.arc(skill.x, skill.y, pulseRadius + 10, 0, Math.PI * 2)
@@ -275,7 +275,7 @@ export default function Skills() {
       // Label background circle
       const labelGradient = ctx.createRadialGradient(skill.x, labelY, 0, skill.x, labelY, labelRadius)
       labelGradient.addColorStop(0, categoryColors[skill.category] + "20")
-      labelGradient.addColorStop(0, categoryColors[skill.category] + "10")
+      labelGradient.addColorStop(0, categoryColors[skill.category] + "15")
       labelGradient.addColorStop(0, categoryColors[skill.category] + "05")
 
       ctx.beginPath()
@@ -286,7 +286,7 @@ export default function Skills() {
       // Label border
       ctx.beginPath()
       ctx.arc(skill.x, labelY, labelRadius, 0, Math.PI * 2)
-      ctx.strokeStyle = categoryColors[skill.category] + "45"
+      ctx.strokeStyle = categoryColors[skill.category] + "100"
       ctx.lineWidth = 1
       ctx.stroke()
 

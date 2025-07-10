@@ -85,7 +85,6 @@ export default function Skills() {
     initializeSkills()
     startAnimation()
 
-    // Change formation every 8 seconds
     const formationInterval = setInterval(() => {
       const formations: Array< "wave" > = ["wave"]
       const currentIndex = formations.indexOf(formation)
@@ -167,18 +166,18 @@ export default function Skills() {
     const time = Date.now() * 0.001
 
     skillsRef.current.forEach((skill, index) => {
-      // Smooth movement towards target position
+    
       const smoothness = 0.01
       skill.x += (skill.targetX - skill.x) * smoothness
       skill.y += (skill.targetY - skill.y) * smoothness
 
-      // Add subtle floating effect
+      
       const floatX = Math.sin(time * 0.5 + index) * 3
       const floatY = Math.cos(time * 0.3 + index) * 2
       skill.x += floatX * 0.1
       skill.y += floatY * 0.1
 
-      // Keep within bounds
+      
       const margin = 60
       skill.x = Math.max(margin, Math.min(1000 - margin, skill.x))
       skill.y = Math.max(margin, Math.min(500 - margin, skill.y))
@@ -194,7 +193,6 @@ export default function Skills() {
 
     ctx.clearRect(0, 0, canvas.width, canvas.height)
 
-    // Draw animated connections first
     skillsRef.current.forEach((skill) => {
       skill.connections.forEach((connectionName) => {
         const connectedSkill = skillsRef.current.find((s) => s.name === connectionName)
@@ -203,7 +201,7 @@ export default function Skills() {
         const isHighlighted = hoveredSkill === skill.name || hoveredSkill === connectionName
         const time = Date.now() * 0.003
 
-        // Animated connection line
+       
         ctx.beginPath()
         ctx.moveTo(skill.x, skill.y)
         ctx.lineTo(connectedSkill.x, connectedSkill.y)
@@ -218,7 +216,7 @@ export default function Skills() {
         ctx.lineWidth = isHighlighted ? 3 : 1.5
         ctx.stroke()
 
-        // Animated energy particles along connections
+       
         if (isHighlighted) {
           const distance = Math.sqrt(Math.pow(connectedSkill.x - skill.x, 2) + Math.pow(connectedSkill.y - skill.y, 2))
           const progress = (time % 2) / 2
@@ -233,10 +231,9 @@ export default function Skills() {
       })
     })
 
-    // Draw formation-specific effects
     drawFormationEffects(ctx)
 
-    // Draw skill nodes and labels on top
+ 
     skillsRef.current.forEach((skill) => {
       const isHovered = hoveredSkill === skill.name
       const time = Date.now() * 0.001
@@ -275,8 +272,8 @@ export default function Skills() {
       // Label background circle
       const labelGradient = ctx.createRadialGradient(skill.x, labelY, 0, skill.x, labelY, labelRadius)
       labelGradient.addColorStop(0, categoryColors[skill.category] + "20")
-      labelGradient.addColorStop(0, categoryColors[skill.category] + "10")
-      labelGradient.addColorStop(0, categoryColors[skill.category] + "05")
+      labelGradient.addColorStop(1, categoryColors[skill.category] + "10")
+      labelGradient.addColorStop(1, categoryColors[skill.category] + "05")
 
       ctx.beginPath()
       ctx.arc(skill.x, labelY, labelRadius, 0, Math.PI * 2)
@@ -400,7 +397,7 @@ export default function Skills() {
       //   break
     }
 
-    // Universal floating particles
+
     for (let i = 0; i < 20; i++) {
       const x = 100 + i * 40 + Math.sin(time + i) * 20
       const y = 100 + Math.cos(time * 0.7 + i) * 200
