@@ -388,7 +388,6 @@ section h2 {
   pointer-events: none;
 }
 
-/* Remove all the old .skill-node styles and replace with: */
 
 .skill-hover-area {
   background: transparent;
@@ -518,7 +517,6 @@ section h2 {
   }
 }
 
-/* Category-specific styles */
 .skill-node.frontend {
   border-color: #3b82f6;
 }
@@ -535,7 +533,6 @@ section h2 {
   border-color: #8b5cf6;
 }
 
-/* Animations */
 @keyframes skillAppear {
   from {
     opacity: 0;
@@ -547,7 +544,6 @@ section h2 {
   }
 }
 
-/* Experience Styles */
 .timeline {
   max-width: 800px;
   margin: 0 auto;
@@ -629,7 +625,6 @@ section h2 {
   font-size: 16px;
 }
 
-/* Projects Styles */
 .projects {
   background-color: transparent;
   backdrop-filter: blur(0px);
@@ -719,7 +714,6 @@ section h2 {
   color: var(--accent);
 }
 
-/* Contact Styles */
 .contact-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -810,7 +804,6 @@ section h2 {
   color: var(--text-muted);
 }
 
-/* Footer Styles */
 .footer {
   background-color: black;
   backdrop-filter: blur(10px);
@@ -846,7 +839,6 @@ section h2 {
   color: var(--accent);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
@@ -1009,7 +1001,6 @@ section h2 {
   }
 }
 
-/* Background Selector Styles */
 .background-selector {
   position: fixed;
   top: 50%;
@@ -1114,13 +1105,11 @@ section h2 {
   animation: none;
 }
 
-/* Triggered when section comes into view */
 .animate .animated-heading span {
   animation: rollIn 0.5s forwards;
   animation-delay: 50ms;
 }
 
-/* Also allow replay on hover */
 section:hover .animated-heading span {
   /* color: red; */
   animation: rollIn 1s forwards;
