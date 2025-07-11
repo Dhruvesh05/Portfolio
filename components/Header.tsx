@@ -18,7 +18,7 @@ export default function Header() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: "smooth" })
-      setMenuOpen(false) // close menu after click
+      setMenuOpen(false)
     }
   }
 

@@ -5,7 +5,7 @@ export default function Projects() {
       description:
         "A full-stack E-commerce solution built  with Django framework for stakeholders who delas with selling of gas cylinders for industrial, medical and other purposes. It has features which includes user authentication, payment processing, and admin dashboard.",
       tech: ["Django", "JavaScript", "SQL", "HTML-CSS"],
-      github: "#",
+      github: "https://github.com/Dhruvesh05/C3ube",
       demo: "#",
     },
     {
@@ -13,7 +13,7 @@ export default function Projects() {
       description:
         "A real-time chat system where users can exchange messages within rooms by creating or joining rooms using unique room IDs, with all chat being stored and accessible even if users join the room at a later time. Provides a minimal user interface clutter.",
       tech: ["Springboot", "React.js", "Socket.io", "MongoDB"],
-      github: "#",
+      github: "https://github.com/Dhruvesh05/chat-app-frontend",
       demo: "#",
     },
     {
@@ -21,7 +21,7 @@ export default function Projects() {
       description:
         "A C++ Graphics project that allows users to visually plot various mathematical graphs using graphics.h library. This application is built using Object-Oriented principles, demonstrating inheritance and polymorphism through multiple graph types.",
       tech: ["C++"],
-      github: "#",
+      github: "https://github.com/Dhruvesh05/cg_miniproject",
       demo: "#",
     },
   ]
