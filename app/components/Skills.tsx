@@ -56,19 +56,21 @@ export default function Skills() {
     },
 
     {
+      name: "Java",
+      category: "language",
+      connections: ["Python", "MongoDB"],
+    },
+
+    {
       name: "Python",
       category: "language",
       connections: ["Java", "C++"],
     },
-    {
-      name: "Java",
-      category: "language",
-      connections: ["Python", "C++"],
-    },
+    
     {
       name: "C++",
       category: "language",
-      connections: ["Python", "Java"],
+      connections: ["Python"],
     },
     
   ]
