@@ -5,21 +5,21 @@ export default function Experience() {
       company: "MLSC KKWIEER",
       period: "2024 - Present",
       description:
-        "Core Committee member in the social media team at MLSC KKWIEER .",
+        "Core Committee member in the social media team at MLSC KKWIEER. Contributed to managing and organizing various technical and non-technical events like Meme - Making Competition, Expert Talk, which led to student skill and knowledge development.",
     },
     {
       title: "Creative Team",
       company: "FOSS Club KKWIEER",
       period: "2024 - Present",
       description:
-        "Core Committee Member in the creative team at FOSS Club KKWIEER .",
+        "Core Committee Member in the creative team at FOSS Club KKWIEER. Managed organisation of technical workshops on topics like Docker, Django and Open-Source to enhance technical skills among students.",
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Agency",
-      period: "2019 - 2020",
+      title: "EPM and Logistics Team",
+      company: "Innov-era, KKWIEER",
+      period: "Feb 2025 - Mar 2025",
       description:
-        "Created responsive websites and web applications for various clients. Specialized in React development and modern CSS techniques.",
+        "Worked as member for EPM and Logistics team at Innov-era, KKWIEER. Assisted to successful event planning, managing logistics to drive smooth experience to participants, judges and attendees.",
     },
   ]
 
