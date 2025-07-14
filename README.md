@@ -5,14 +5,13 @@
   <img src="https://img.shields.io/github/repo-size/Dhruvesh05/Portfolio?style=for-the-badge&color=success" alt="Repo Size" />
   <img src="https://img.shields.io/github/last-commit/Dhruvesh05/Portfolio?style=for-the-badge&color=informational" alt="Last Commit" />
   <img src="https://img.shields.io/github/deployments/Dhruvesh05/Portfolio/production?label=Vercel%20Deploy&style=for-the-badge&logo=vercel" alt="Deployment" />
-  <!-- Uncomment when CI/CD is active -->
   <!-- <img src="https://img.shields.io/github/actions/workflow/status/Dhruvesh05/Portfolio/deploy.yml?label=Build&style=for-the-badge" alt="GitHub Actions Status" /> -->
 </p>
 
 ---
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/99132893/251201964-portfolio-banner.gif" alt="Portfolio Banner" width="100%"/>
+  <img src="https://user-images.githubusercontent.com/99132893/251201964-portfolio-banner.gif" alt="Portfolio Banner" width="100%" />
 </p>
 
 ---
@@ -28,11 +27,11 @@ Built with **React.js**, this portfolio represents my journey, technical skills,
 
 ## 💡 Features
 
-- ⚡ Responsive & interactive layout
-- 🌗 Light/Dark mode toggle
-- 🎨 Custom theme with CSS variables
-- 🚀 Fast loading & deployed on Vercel
-- 🔄 Scalable, reusable component structure
+- ⚡ Responsive & interactive layout  
+- 🌗 Light/Dark mode toggle  
+- 🎨 Custom theme with CSS variables  
+- 🚀 Fast loading & deployed on Vercel  
+- 🔄 Scalable, reusable component structure  
 
 ---
 
@@ -46,30 +45,28 @@ Built with **React.js**, this portfolio represents my journey, technical skills,
 
 ## 🔍 Preview
 
-> 🔗 **Live Website**: [https://dhruvesh05.vercel.app](https://dhruvesh05.vercel.app)
+🔗 **Live Website**: [https://dhruvesh05.vercel.app](https://dhruvesh05.vercel.app)
 
 ---
 
 ## 🎯 Featured Projects
 
 <div align="center">
-
   <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
 
     <a href="https://github.com/Dhruvesh05/DSA-Mini-Project" target="_blank" style="text-decoration: none;">
-      <div style="background-color: #000; border: 2px solid #00f0ff; border-radius: 10px; padding: 10px; width: 300px;">
+      <div style="background-color: #000000; border: 2px solid #00bfff; border-radius: 10px; padding: 10px; width: 300px; margin: 10px;">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=DSA-Mini-Project&theme=dark" width="100%" />
       </div>
     </a>
 
     <a href="https://github.com/Dhruvesh05/cg_miniproject" target="_blank" style="text-decoration: none;">
-      <div style="background-color: #000; border: 2px solid #00f0ff; border-radius: 10px; padding: 10px; width: 300px;">
+      <div style="background-color: #000000; border: 2px solid #00bfff; border-radius: 10px; padding: 10px; width: 300px; margin: 10px;">
         <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=cg_miniproject&theme=dark" width="100%" />
       </div>
     </a>
 
   </div>
-
 </div>
 
 ---
@@ -90,6 +87,7 @@ npm run dev
 
 
 ---
+
 📬 Contact Me
 
 📧 Email: dhruveshpatil7777@gmail.com
