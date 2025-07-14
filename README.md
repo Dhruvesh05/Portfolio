@@ -52,14 +52,25 @@ Built with **React.js**, this portfolio represents my journey, technical skills,
 
 ## 🎯 Featured Projects
 
-<p align="center">
-  <a href="https://github.com/Dhruvesh05/DSA-Mini-Project">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=DSA-Mini-Project&theme=radical" />
-  </a>
-  <a href="https://github.com/Dhruvesh05/cg_miniproject">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=cg_miniproject&theme=radical" />
-  </a>
-</p>
+<div align="center">
+
+  <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+
+    <a href="https://github.com/Dhruvesh05/DSA-Mini-Project" target="_blank" style="text-decoration: none;">
+      <div style="background-color: #000; border: 2px solid #00f0ff; border-radius: 10px; padding: 10px; width: 300px;">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=DSA-Mini-Project&theme=dark" width="100%" />
+      </div>
+    </a>
+
+    <a href="https://github.com/Dhruvesh05/cg_miniproject" target="_blank" style="text-decoration: none;">
+      <div style="background-color: #000; border: 2px solid #00f0ff; border-radius: 10px; padding: 10px; width: 300px;">
+        <img src="https://github-readme-stats.vercel.app/api/pin/?username=Dhruvesh05&repo=cg_miniproject&theme=dark" width="100%" />
+      </div>
+    </a>
+
+  </div>
+
+</div>
 
 ---
 
