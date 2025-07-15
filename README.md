@@ -1,56 +1,27 @@
-<h1 align="center">🚀 Dhruvesh Patil — Developer Portfolio 🌐</h1>
+<h1 align="center">✨ Dhruvesh Patil — Portfolio 🚀</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/top/Dhruvesh05/Portfolio?style=for-the-badge&color=blue" />
-  <img src="https://img.shields.io/github/repo-size/Dhruvesh05/Portfolio?style=for-the-badge" />
-  <img src="https://img.shields.io/github/last-commit/Dhruvesh05/Portfolio?style=for-the-badge&color=green" />
+  <a href="https://portfolio1-delta-wine.vercel.app/" target="_blank">
+    🔗 Live Portfolio
+  </a>
+  &nbsp;|&nbsp;
+  <a href="https://github.com/Dhruvesh05/Portfolio" target="_blank">
+    📁 Source Code
+  </a>
 </p>
 
-<p align="center">
-  A sleek, minimalistic, and responsive portfolio website built with <strong>React.js</strong> and <strong>Vite</strong>, crafted to showcase my skills, projects, and online presence.
-</p>
+A modern, responsive, and minimal personal portfolio built using <strong>React.js</strong> and <strong>Vite</strong>, styled with clean custom CSS and powered by <strong>Vercel</strong> for fast deployment. This portfolio reflects my journey as a web developer, highlighting my skills, experiences, and projects in a clean, intuitive layout. Designed with simplicity and speed in mind, it features smooth navigation, clear content sections, and optimized performance across devices. Whether you're a recruiter, collaborator, or curious visitor — this site offers a quick glance into my technical identity.
 
-<p align="center">
-  🔗 <a href="https://dhruvesh05.vercel.app" target="_blank"><strong>Live Demo</strong></a> •
-  📁 <a href="https://github.com/Dhruvesh05/Portfolio"><strong>Source Code</strong></a> •
-  👨‍💻 <a href="#-about-me"><strong>About Me</strong></a>
-</p>
+Built with: React.js, Vite, CSS3, Google Fonts (Poppins), React Icons, Vercel.
 
----
+Deployed at: 🔗 [portfolio1-delta-wine.vercel.app](https://portfolio1-delta-wine.vercel.app/)
 
-## 👨‍💻 About Me
-
-I'm **Dhruvesh Patil**, a B.Tech Computer Engineering student with a strong passion for web development, AI tools, and automation.
-
-- 💡 Always exploring new technologies  
-- 🧠 Learning by building real-world projects  
-- 🌐 Interested in internships and freelancing  
-- 🌱 Currently exploring AI + Automation
+📫 Contact:  
+• GitHub: [Dhruvesh05](https://github.com/Dhruvesh05)  
+• LinkedIn: [Dhruvesh Patil](https://www.linkedin.com/in/dhruvesh-patil-a31917280/)  
+• Email: [dhruveshpatil7777@gmail.com](mailto:dhruveshpatil7777@gmail.com)
 
 ---
 
-## 🌟 Key Features
-
-- ⚛️ Built using React.js & Vite  
-- 💼 Dedicated Projects section  
-- 📄 Resume download functionality  
-- 📱 Fully responsive across all devices  
-- 🌐 Social media integration  
-- ⚡️ Fast, lightweight, and modern UI
-
----
-
-## 🛠 Tech Stack
-
-| Category     | Technologies                     |
-|--------------|----------------------------------|
-| Frontend     | React.js, Vite                   |
-| Styling      | Custom CSS, Google Fonts (Poppins) |
-| Icons        | React Icons, SVGs                |
-| Deployment   | Vercel                           |
-| Tools        | GitHub, VS Code                  |
-
----
-
-## 📁 Folder Structure
-
+> Feel free to clone this project, customize it for your own profile, and launch your personal brand online.  
+> If you find it useful, don't forget to ⭐ the repository and share it forward!
