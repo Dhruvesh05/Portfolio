@@ -22,7 +22,7 @@ export default function Hero() {
         <div className={`hero-content ${mounted ? "animate" : ""}`}>
           <div className="profile-picture">
             <img
-              src="/profileimg.jpg?height=500&width=500"
+              src="/portfolio25.jpg?height=500&width=500"
               alt="Dhruvesh Patil - Profile Picture"
               className="profile-img"
             />
