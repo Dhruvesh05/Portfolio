@@ -1,11 +1,17 @@
 export default function Experience() {
   const experiences = [
     {
+      title: "Technical Team",
+      company: "CSI KKWIEER Students' Branch",
+      period: "2025 - Present",
+      description:
+        "Builded Website for CSI KKWIEER as part of Technical Team for academic year 2025-26. Also contributed event registration systems, and digital resources also providing technical support during events.},
+    {
       title: "Core Committee",
       company: "MLSC KKWIEER",
       period: "2024 - Present",
       description:
-        "Core Committee member in the social media team at MLSC KKWIEER. Contributed to managing and organizing various technical and non-technical events like Meme - Making Competition, Expert Talk, which led to student skill and knowledge development.",
+        "Core Committee member in the social mediateam at CSI KKWIEER. Contributed to managing and organizing various technical and non-technical events like Meme - Making Competition, Expert Talk, which led to student skill and knowledge development.",
     },
     {
       title: "Creative Team",
